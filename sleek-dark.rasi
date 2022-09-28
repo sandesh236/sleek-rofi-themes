@@ -1,0 +1,158 @@
+*{
+  /* Default background color */ background-color : transparent;
+  text-color : white;
+  }
+
+  window {
+  padding: 1 em;
+
+  border-color : transparent;
+  border: 0 px;
+  border-radius : 10 px;
+  background-color :  #1A1C1Ebf;
+
+}
+
+mainbox {
+  spacing: 0 px;
+
+  children : [ inputbar, wrapper-mode-switcher, listview ];
+  //children: [ inputbar, listview ];
+}
+
+element {
+  background: transparent;
+  children: [ element-icon, element-text ];
+}
+element, element-text, element-icon, button {
+  cursor: pointer;
+}
+
+inputbar {
+  margin: 0 px 0 px 0.5 em 0 em;
+  spacing: 0.4 em;
+  children: [ button-iggy1, entry, overlay, case-indicator, button-iggy2 ];
+}
+
+button-iggy1, button-iggy2 {
+  expand: false;
+  content: "[paste]";
+  action: "kb-primary-paste";
+  horizontal-align : 0.5;
+}
+button-iggy2 {
+  content: "[screenshot]";
+  action: "kb-screenshot";
+}
+
+listview, inputbar, message {
+  padding: 0.5 em;
+  // border : 2 px;
+  border-radius : 6 px;
+  expand: false;
+  background-color :  #282A2Ebf;
+
+  columns : 4;
+  lines: 4;
+}
+listview {
+  padding: 8 px;
+  margin: 16 px 0 0 0;
+  // border : 0 px 5 px 5 px 5 px;
+  border-radius : 5 px;
+  dynamic: true;
+  cycle: true;
+  fixed-columns : true;
+  fixed-height  : true;
+  flow: horizontal;
+}
+
+element {
+  border: 0;
+  padding: 10 px;
+  font: "Mono 8";
+  orientation: vertical;
+}
+element-icon {
+  size: 2 em;
+}
+
+element selected {
+  // border-color : lightgreen;
+  border-radius   : 6 px;
+  background-color :  #408BF8;
+}
+
+element-text, element-icon {
+  font: inherit;
+  horizontal-align : 0.5;
+}
+
+wrapper-mode-switcher {
+  orientation: horizontal;
+  background-color :  #282A2E;
+  padding : 8 px;
+  border-radius : 5 px;
+
+  expand: false;
+  spacing: 0;
+  children: [ icon-ms-ic1, mode-switcher, icon-ms-ic2 ];
+}
+icon-ms-ic1 {
+  filename: "go-previous";
+  action: "kb-mode-previous";
+}
+icon-ms-ic2 {
+  filename: "go-next";
+
+  action: "kb-mode-next";
+}
+icon-ms-ic1, icon-ms-ic2 {
+  size: 16;
+  vertical-align : 0.5;
+  expand: false;
+  padding: 8 px;
+
+  border-radius : 5 px;
+  text-color : white;
+  background-color :  #9BA3AE;
+  cursor : pointer;
+
+}
+icon-ms-ic1 {
+  margin: 0 16 px 0 0;
+
+}
+
+icon-ms-ic2 {
+  margin: 0 0 0 16 px;
+
+}
+
+mode-switcher {
+  border: 0 px;
+  spacing: 0 px;
+  expand: true;
+
+}
+button {
+  text-color : white;
+  border: 0 px 0 px 2 px;
+  border-color :  #2b2b2b;
+  border-radius : 5 px;
+  padding: 16 px;
+
+  horizontal-align : 0.5;
+}
+button selected . normal {
+  text-color : white;
+  margin: 0 px;
+  padding: 0 px;
+  background-color :  #3F8AF9;
+}
+
+entry {
+  placeholder: "Search open window";
+  placeholder-color :  #585E65;
+}
+
