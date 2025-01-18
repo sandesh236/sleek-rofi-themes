@@ -150,10 +150,6 @@ button selected.normal {
     background-color: #5D32D5;
 }
 
-entry {
-    placeholder: "Search open window";
-    placeholder-color: #585E65;
-  }
 
 entry {
     placeholder:"Sleek rasi themes (c)";
