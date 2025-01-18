@@ -155,4 +155,9 @@ entry {
     placeholder-color: #585E65;
   }
 
+entry {
+    placeholder:"Sleek rasi themes (c)";
+    placeholder-color: #585E65;
+  }
+
 
