@@ -156,3 +156,7 @@ entry {
   placeholder-color :  #585E65;
 }
 
+entry {
+  placeholder: "Placeholder";
+  placeholder-color :  #585E65;
+}
