@@ -151,8 +151,4 @@ button selected . normal {
   background-color :  #3F8AF9;
 }
 
-entry {
-  placeholder: "Search open window";
-  placeholder-color :  #585E65;
-}
 
