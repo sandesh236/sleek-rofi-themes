@@ -151,4 +151,9 @@ button selected.normal {
 }
 
 
+entry {
+    placeholder:"Sleek rasi themes (c)";
+    placeholder-color: #585E65;
+  }
+
 
